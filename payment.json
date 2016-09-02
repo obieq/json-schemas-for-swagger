@@ -1,12 +1,10 @@
 {
-  "Model": {
-    "description": "A simple model",
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer",
-        "format": "int64"
-      }
+  "description": "A simple model",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int64"
     }
   }
 }
