@@ -1,0 +1,30 @@
+{
+                "id": "9",
+                "method": "makeDirectBillPayment",
+                "params": [{
+                                "amountPaid": 1.22,
+                                "paymentDate": "2016-08-11T04:00:00Z",
+                                "paymentInstrument": {
+                                                "save":true,
+                                                "SetAsDefaultInstrument":false,
+                                                "paymentMethod": "creditcard",
+                                                "creditCardData": {
+                                                                "creditCardExpDate": "2021-08-11T04:00:00Z",
+                                                                "creditCardIssuer": "VISA",
+                                                                "creditCardNumber": "4111111111111111",
+                                                                "firstName": "John",
+                                                                "lastName": "Adams",
+                                                                "creditCardAddress": {
+                                                                                "addressLine1": "45 River Way",
+                                                                                "addressLine2": "Unit 6",
+                                                                                "city": "Richmond",
+                                                                                "state": "VA",
+                                                                                "postalCode": "23225",
+                                                                                "country": "US"
+                                                                }
+                                                }
+          
+                                }
+                }],
+                "jsonrpc": "2.0"
+}
