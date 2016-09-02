@@ -7,19 +7,6 @@
         "id": {
           "type": "integer",
           "format": "int64"
-        },
-        "tag": {
-          "description": "a complex, shared property.  Note the absolute reference",
-          "$ref": "https://my.company.com/definitions/models.json#/models/Tag"
-        }
-      }
-    },
-    "Tag": {
-      "description": "A tag entity in the system",
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
         }
       }
     }
