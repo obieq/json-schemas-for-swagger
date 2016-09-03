@@ -5,7 +5,7 @@
     "id": {
       "type": "integer",
       "format": "int64",
-      "default": "9"
+      "default": 9
     }
   }
 }
