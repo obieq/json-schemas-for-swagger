@@ -97,41 +97,16 @@
                       "country"
                     ]
                   }
-                },
-                "required": [
-                  "creditCardExpDate",
-                  "creditCardIssuer",
-                  "creditCardNumber",
-                  "firstName",
-                  "lastName",
-                  "creditCardAddress"
-                ]
+                }
               }
-            },
-            "required": [
-              "save",
-              "SetAsDefaultInstrument",
-              "paymentMethod",
-              "creditCardData"
-            ]
+            }
           }
-        },
-        "required": [
-          "amountPaid",
-          "paymentDate",
-          "paymentInstrument"
-        ]
+        }
       }
     },
     "jsonrpc": {
       "type": "string",
       "default": "2.0"
     }
-  },
-  "required": [
-    "id",
-    "method",
-    "params",
-    "jsonrpc"
-  ]
+  }
 }
