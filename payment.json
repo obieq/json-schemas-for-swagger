@@ -1,11 +1,128 @@
 {
-  "description": "A simple model",
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "integer",
-      "format": "int64",
-      "default": 9
+  "id": {
+    "type": "string",
+    "default": "9"
+  },
+  "method": {
+    "type": "string",
+    "default": "makeDirectBillPayment"
+  },
+  "params": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "amountPaid": {
+          "type": "number",
+          "default": 1.22
+        },
+        "paymentDate": {
+          "type": "string",
+          "default": "2016-08-11T04:00:00Z"
+        },
+        "paymentInstrument": {
+          "type": "object",
+          "properties": {
+            "save": {
+              "type": "boolean",
+              "default": true
+            },
+            "SetAsDefaultInstrument": {
+              "type": "boolean",
+              "default": false
+            },
+            "paymentMethod": {
+              "type": "string",
+              "default": "creditcard"
+            },
+            "creditCardData": {
+              "type": "object",
+              "properties": {
+                "creditCardExpDate": {
+                  "type": "string",
+                  "default": "2021-08-11T04:00:00Z"
+                },
+                "creditCardIssuer": {
+                  "type": "string",
+                  "default": "VISA"
+                },
+                "creditCardNumber": {
+                  "type": "string",
+                  "default": "4111111111111111"
+                },
+                "firstName": {
+                  "type": "string",
+                  "default": "John"
+                },
+                "lastName": {
+                  "type": "string",
+                  "default": "Adams"
+                },
+                "creditCardAddress": {
+                  "type": "object",
+                  "properties": {
+                    "addressLine1": {
+                      "type": "string",
+                      "default": "45 River Way"
+                    },
+                    "addressLine2": {
+                      "type": "string",
+                      "default": "Unit 6"
+                    },
+                    "city": {
+                      "type": "string",
+                      "default": "Richmond"
+                    },
+                    "state": {
+                      "type": "string",
+                      "default": "VA"
+                    },
+                    "postalCode": {
+                      "type": "string",
+                      "default": "23225"
+                    },
+                    "country": {
+                      "type": "string",
+                      "default": "US"
+                    }
+                  },
+                  "required": [
+                    "addressLine1",
+                    "addressLine2",
+                    "city",
+                    "state",
+                    "postalCode",
+                    "country"
+                  ]
+                }
+              },
+              "required": [
+                "creditCardExpDate",
+                "creditCardIssuer",
+                "creditCardNumber",
+                "firstName",
+                "lastName",
+                "creditCardAddress"
+              ]
+            }
+          },
+          "required": [
+            "save",
+            "SetAsDefaultInstrument",
+            "paymentMethod",
+            "creditCardData"
+          ]
+        }
+      },
+      "required": [
+        "amountPaid",
+        "paymentDate",
+        "paymentInstrument"
+      ]
     }
+  },
+  "jsonrpc": {
+    "type": "string",
+    "default": "2.0"
   }
 }
